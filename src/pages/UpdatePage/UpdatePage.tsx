@@ -7,26 +7,25 @@ import {
   selectSingleListing,
   selectListingsLoading,
   selectListingsError,
-  clearError,
 } from '../../features/listings/listingSlice';
 import './style.css';
 
-interface Listing {
-  _id: string;
-  title: string;
-  description: string;
-  price: number;
-  location: string;
-  images: string[];
-  videos?: string[];
-  user: {
-    _id: string;
-    name: string;
-    email: string;
-  };
-  createdAt: string;
-  updatedAt: string;
-}
+// interface Listing {
+//   _id: string;
+//   title: string;
+//   description: string;
+//   price: number;
+//   location: string;
+//   images: string[];
+//   videos?: string[];
+//   user: {
+//     _id: string;
+//     name: string;
+//     email: string;
+//   };
+//   createdAt: string;
+//   updatedAt: string;
+// }
 
 const UpdateListing = () => {
   const dispatch = useAppDispatch();
@@ -50,10 +49,6 @@ const UpdateListing = () => {
   const [uploadError, setUploadError] = useState('');
   const [formError, setFormError] = useState('');
   const [uploading, setUploading] = useState(false);
-
-  
-  const CLOUDINARY_CLOUD_NAME = 'your_cloud_name'; 
-  const CLOUDINARY_UPLOAD_PRESET = 'your_upload_preset'; 
 
   useEffect(() => {
     console.log('User:', user);

@@ -2,7 +2,7 @@ import { Navigate } from 'react-router-dom';
 import { useAppSelector } from '../app/hooks';
 
 interface Props {
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 const ProtectedRoute = ({ children }: Props) => {
