@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://ramos-server.vercel.app',
+  baseURL: 'https://ramos-server.vercel.app/api',
   withCredentials: true, 
 });
 
