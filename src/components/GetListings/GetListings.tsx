@@ -64,7 +64,7 @@ const AllListings = () => {
             <div className="listing-content">
               <h3>{listing.title}</h3>
               <p><strong>Price:</strong> ${listing.price}</p>
-              <p><strong>Description:</strong> {listing.description.length > 300
+              <p><strong>Description:</strong> {listing.description
                   ? `${listing.description.slice(0, 200)}...`
                   : listing.description}
               </p>
